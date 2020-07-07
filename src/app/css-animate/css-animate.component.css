@@ -1,0 +1,13 @@
+.animate {
+    width: 120px;
+    height: 120px;
+    background-color: purple;
+    /* animation: colorChange 5s ;  */
+}
+@keyframes colorChange{
+    0% {background-color: purple;}
+    25% {background-color: seagreen;}
+    50% {background-color: cornflowerblue;}
+    75% {background-color: crimson;}
+    100% {background-color: cyan;}
+}

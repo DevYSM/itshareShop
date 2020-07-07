@@ -1,6 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~bootstrap/dist/css/bootstrap.css";
+@import "~animate.css/animate.css";
+body {
+    padding-top: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
 
 body {
-    padding-top: 100px;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    margin: 50px auto;
 }

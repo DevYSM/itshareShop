@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'itshareShop';
+  courseName='';
+
+  ShowMe(courseName) {
+    this.courseName= courseName;
+     alert(this.courseName);
+  }
+
 }

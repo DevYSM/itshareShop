@@ -1,0 +1,10 @@
+<div @todoSSSAnimation class="to-do-list">
+    <h1>To Do List</h1>
+    <div class="form-group">
+        <label>Create New Item</label>
+        <input type="text" class="form-control" name="itemInput" #itemInput (keyup.enter)="addItem(itemInput)">
+    </div>
+    <div class="list-group">
+        <button @toDoAnimation *ngFor="let item of items" (click)="removeItem(item)" class="list-group-item">{{ item }}</button>
+    </div>
+</div>

@@ -10,6 +10,19 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { LoginComponent } from './login/login.component';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from 'src/environments/environment';
+import { CssAnimateComponent } from './css-animate/css-animate.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TodosComponent } from './todos/todos.component';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,8 +34,24 @@ import { LoginComponent } from './login/login.component';
     AdminOrdersComponent,
     ShoppingCartComponent,
     LoginComponent,
+    CssAnimateComponent,
+    TodosComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    NgbModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    BrowserAnimationsModule,  // Active Animation,
+    MatSliderModule,
+    MatToolbarModule,
+    MatButtonModule, 
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
